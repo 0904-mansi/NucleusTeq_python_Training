@@ -105,4 +105,125 @@ public class Main {
     }
 }
 ```
+# Abstract Factory Pattern
+
+Abstract Factory pattern is almost similar to Factory Pattern and is considered as another layer of abstraction over factory pattern. Abstract Factory patterns work around a super-factory which creates other factories.
+
+# Builder Design Pattern
+
+The Builder Design Pattern is a creational pattern used in software design to construct a complex object step by step. It allows the construction of a product in a step-by-step fashion,
+
+# Components of the Builder Design Pattern
+
+1. Product
+
+The Product is the complex object that the Builder pattern is responsible for constructing.
+
+2. Builder
+
+The Builder is an interface or an abstract class that declares the construction steps for building a complex object.
+
+3. ConcreteBuilder
+
+ConcreteBuilder classes implement the Builder interface, providing specific implementations for building each part of the product.
+
+4. Director
+
+The Director is responsible for managing the construction process of the complex object.
+
+5. Client
+
+The Client is the code that initiates the construction of the complex object.
+
+```java
+// Product class
+class Burger {
+    private String bread;
+    private String meat;
+    private boolean cheese;
+    private boolean lettuce;
+    private boolean tomato;
+
+    public Burger(String bread, String meat, boolean cheese, boolean lettuce, boolean tomato) {
+        this.bread = bread;
+        this.meat = meat;
+        this.cheese = cheese;
+        this.lettuce = lettuce;
+        this.tomato = tomato;
+    }
+
+    @Override
+    public String toString() {
+        return "Burger{" +
+                "bread='" + bread + '\'' +
+                ", meat='" + meat + '\'' +
+                ", cheese=" + cheese +
+                ", lettuce=" + lettuce +
+                ", tomato=" + tomato +
+                '}';
+    }
+}
+
+// Builder class
+class BurgerBuilder {
+    private String bread;
+    private String meat;
+    private boolean cheese;
+    private boolean lettuce;
+    private boolean tomato;
+
+    public BurgerBuilder() {
+    }
+
+    public BurgerBuilder withBread(String bread) {
+        this.bread = bread;
+        return this;
+    }
+
+    public BurgerBuilder withMeat(String meat) {
+        this.meat = meat;
+        return this;
+    }
+
+    public BurgerBuilder withCheese(boolean cheese) {
+        this.cheese = cheese;
+        return this;
+    }
+
+    public BurgerBuilder withLettuce(boolean lettuce) {
+        this.lettuce = lettuce;
+        return this;
+    }
+
+    public BurgerBuilder withTomato(boolean tomato) {
+        this.tomato = tomato;
+        return this;
+    }
+
+    public Burger build() {
+        return new Burger(bread, meat, cheese, lettuce, tomato);
+    }
+}
+
+// Client class
+public class Main {
+    public static void main(String[] args) {
+        // Using the builder to create a burger
+        Burger burger = new BurgerBuilder()
+                            .withBread("Wheat")
+                            .withMeat("Beef")
+                            .withCheese(true)
+                            .withLettuce(true)
+                            .withTomato(false)
+                            .build();
+
+        System.out.println(burger);
+    }
+}
+```
+
+# Prototype Design Pattern
+
+The Prototype Design Pattern is a creational pattern that enables the creation of new objects by copying an existing object. Prototype allows us to hide the complexity of making new instances from the client. The concept is to copy an existing object rather than create a new instance from scratch, something that may include costly operations. The existing object acts as a prototype and contains the state of the object. 
+
 

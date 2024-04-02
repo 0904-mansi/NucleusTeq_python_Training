@@ -1,5 +1,7 @@
 https://www.theknowledgeacademy.com/blog/big-data-architecture/ 
 
+https://www.analyticsvidhya.com/blog/2022/05/an-introduction-to-hadoop-ecosystem-for-big-data/?social=google&next=https%3A%2F%2Fwww.analyticsvidhya.com%2Fblog%2F2022%2F05%2Fan-introduction-to-hadoop-ecosystem-for-big-data%2F
+
 <img width="600" alt="image" src="https://github.com/0904-mansi/NucleusTeq_python_Training/assets/81081105/8e9fe685-7997-482f-bcd3-7ae87268d638">
 
 <img width="600" alt="image" src="https://github.com/0904-mansi/NucleusTeq_python_Training/assets/81081105/c81e33b0-e5fa-43e3-b1d3-8f1bf9118c1b">

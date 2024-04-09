@@ -1,4 +1,5 @@
 https://www.theknowledgeacademy.com/blog/big-data-architecture/ 
+https://blog.madhukaraphatak.com/secondary-namenode---what-it-really-do/
 
 https://www.analyticsvidhya.com/blog/2022/05/an-introduction-to-hadoop-ecosystem-for-big-data/?social=google&next=https%3A%2F%2Fwww.analyticsvidhya.com%2Fblog%2F2022%2F05%2Fan-introduction-to-hadoop-ecosystem-for-big-data%2F
 

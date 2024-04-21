@@ -5,7 +5,7 @@ import asyncpg
 app = FastAPI()
 
 # PostgreSQL database connection settings
-DATABASE_URL = "postgresql://postgres:jaiguruji@localhost/api_test"
+DATABASE_URL = "postgresql://postgres:password@localhost/api_test"
 
 # Function to establish database connection
 async def get_connection():

@@ -1,3 +1,6 @@
+# fault tolerance
+Fault refers to failure, thus fault tolerance in Apache Spark is the capability to operate and to recover loss after a failure occurs. If we want our system to be fault tolerant, it should be redundant because we require a redundant component to obtain the lost data. The faulty data recovers by redundant data.
+
 <img width="700" alt="image" src="https://github.com/0904-mansi/NucleusTeq_python_Training/assets/81081105/bc26081f-a009-4672-992e-d213e8a960f6">
 
 # Spark Architecture
